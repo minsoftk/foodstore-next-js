@@ -1,0 +1,45 @@
+.container {
+	min-height: 100vh;
+	padding: 0 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main {
+	padding: 5rem 0;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.title {
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: left;
+	margin-top: 5rem;
+	margin-left: 2rem;
+	color: cornflowerblue;
+}
+.description {
+	margin: 3rem;
+	line-height: 1.15;
+	font-size: 4rem;
+}
+
+.description {
+	line-height: 3;
+	font-size: 1.5rem;
+}
+
+.grid {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	max-width: 800px;
+	margin-top: 1rem;
+}

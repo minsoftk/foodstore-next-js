@@ -1,19 +1,26 @@
 import Head from 'next/head';
 import Link from 'next/link';
-
+import Image from 'next/image';
 /* components */
 import Navigator from '../components/Navigator';
 import Footer from '../components/Footer';
 
 /* css */
-import styles from './about.module.css';
+import styles from './css/about.module.css';
 
-export default function Home() {
+const fetchData = () => {};
+
+export default function About() {
 	return (
-		<div className={styles.container}>
+		<>
 			<Head>
-				<title>FOOD ABOUT</title>
+				<title>Food Store Lists</title>
 				<meta name="viewport" content="initial-scale=1, width=device-width" />
+				<meta name="Keywords" content="음식 맛집 리스트" />
+				<meta name="Description" content="맛집 리스트" />
+				<meta httpEquiv="Title" content="맛집 리스트 food store list" />
+				<meta httpEquiv="Author" content="minsoftk" />
+
 				<link rel="icon" href="/favicon.ico" />
 				<link
 					rel="stylesheet"
@@ -27,43 +34,34 @@ export default function Home() {
 				/>
 			</Head>
 			<Navigator />
-			<main className={styles.main}>
-				<h1 className={styles.title}>EAT</h1>
 
-				<p className={styles.description}>
-					Get started by editing{' '}
-					<code className={styles.code}>pages/index.js</code>
-				</p>
+			<div>
+				<p className={styles.title}>About</p>
+				<hr></hr>
+			</div>
 
-				<div className={styles.grid}>
-					<a href="https://nextjs.org/docs" className={styles.card}>
-						<h3>Documentation &rarr;</h3>
-						<p>Find in-depth information about Next.js features and API.</p>
-					</a>
-
-					<a href="https://nextjs.org/learn" className={styles.card}>
-						<h3>Learn &rarr;</h3>
-						<p>Learn about Next.js in an interactive course with quizzes!</p>
-					</a>
-
-					<a
-						href="https://github.com/vercel/next.js/tree/master/examples"
-						className={styles.card}>
-						<h3>Examples &rarr;</h3>
-						<p>Discover and deploy boilerplate example Next.js projects.</p>
-					</a>
-
-					<a
-						href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-						className={styles.card}>
-						<h3>Deploy &rarr;</h3>
-						<p>
-							Instantly deploy your Next.js site to a public URL with Vercel.
+			<div className={styles.container}>
+				<main className={styles.main}>
+					<div className={styles.grid}>
+						<h1 className={styles.title}>AWESOME FOOD STORE</h1>
+						<p className={styles.description}>
+							React 기반인 Next.js를 사용해서 Store 페이지 개발하기.
 						</p>
-					</a>
-				</div>
-			</main>
-			<Footer />
-		</div>
+					</div>
+				</main>
+				<Footer />
+			</div>
+		</>
 	);
+}
+
+{
+	/* <Navigator />
+			<main className={styles.main}>
+				<h1 className={styles.title}>AWESOME FOOD STORE</h1>
+				<p className={styles.description}>
+					React 기반인 Next.js를 사용해서 Store 페이지 개발하기.
+				</p>
+			</main>
+			<Footer /> */
 }

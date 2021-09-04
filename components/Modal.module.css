@@ -1,0 +1,25 @@
+.foodStore {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.description {
+	text-align: center;
+	padding: 2rem;
+}
+
+.descriptionTitle {
+	font-size: 2rem;
+	font-weight: 500;
+}
+.descriptionText {
+	font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+	.foodStore {
+		display: flex;
+		flex-direction: column;
+	}
+}
