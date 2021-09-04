@@ -26,10 +26,7 @@ export async function getStaticProps() {
 export default function Store(props) {
 	let [modal, setModal] = useState(false);
 	let [foodId, setFoodId] = useState(1); //음식점 List의 id값을 입력받음.
-	console.log(props);
-	useEffect(() => {
-		console.log(modal);
-	}, [modal, foodId]);
+
 	return (
 		<>
 			<Head>
