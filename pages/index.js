@@ -2,10 +2,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 
-/** components **/
-import Footer from '../components/Footer';
-import Navigator from '../components/Navigator';
-
 /** css **/
 import styles from './index.module.css';
 

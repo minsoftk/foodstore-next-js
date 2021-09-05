@@ -1,10 +1,8 @@
 import Head from 'next/head';
-import Link from 'next/link';
+
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 /* components */
-import Navigator from '../components/Navigator';
-import Footer from '../components/Footer';
 import StoreModal from '../components/Modal';
 
 /* css */

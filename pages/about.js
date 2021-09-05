@@ -1,14 +1,7 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import Image from 'next/image';
-/* components */
-import Navigator from '../components/Navigator';
-import Footer from '../components/Footer';
 
 /* css */
 import styles from './about.module.css';
-
-const fetchData = () => {};
 
 const About = () => {
 	return (
@@ -29,10 +22,11 @@ const About = () => {
 			<div className={styles.container}>
 				<main className={styles.main}>
 					<div className={styles.grid}>
-						<h1 className={styles.title}>AWESOME FOOD STORE</h1>
+						<h1 className={styles.btitle}>Food Store Project</h1>
 						<p className={styles.description}>
-							React 기반인 Next.js를 사용해서 Store 페이지 개발하기.
+							React 프레임워크 Next.js를 사용해서 Store 페이지 개발하기.
 						</p>
+						<div>1. Link를 사용한 pre-rendering</div>
 					</div>
 				</main>
 			</div>
