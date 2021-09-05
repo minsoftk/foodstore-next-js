@@ -35,11 +35,11 @@
 	text-decoration: none;
 	padding: 0.3rem;
 }
-.foodStoreInfo__Url:hover {
+.modal_footer__url:hover {
 	opacity: 0.8;
 }
 @media (max-width: 1000px) {
-	.foodStore {
+	.modal_food_store {
 		display: flex;
 		flex-direction: column;
 	}
