@@ -1,26 +1,28 @@
-.foodStore {
+.modal_food_store {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 2rem;
 }
 
-.description {
+.modal_body {
 	padding: 2rem;
-	padding-bottom: 0;
+	padding-bottom: 1rem;
 	width: 100%;
+	margin-left: 0.5rem;
 }
 
-.descriptionTitle {
+.modal_body__title {
 	font-size: 2rem;
 	font-weight: 700;
 	margin-bottom: 3rem;
 }
-.descriptionText {
+.modal_body__text {
 	font-size: 0.8rem;
 	font-weight: 300;
 }
 
-.foodStoreInfo {
+.modal_footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -28,7 +30,7 @@
 	margin: 2rem;
 	margin-top: 0;
 }
-.foodStoreInfo__Url {
+.modal_footer__url {
 	color: black;
 	text-decoration: none;
 	padding: 0.3rem;

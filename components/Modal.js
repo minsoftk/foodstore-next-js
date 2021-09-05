@@ -7,6 +7,7 @@ import { Modal } from 'react-bootstrap';
 import styles from './Modal.module.css';
 
 export default function StoreModal(props) {
+	//개행을 못읽는 오류 split으로 나누고 map을 활용해 <br/>을 삽입.
 	let str = props.data.description.split('\n');
 	let newStr = str.map((line, i) => {
 		return (
@@ -27,20 +28,20 @@ export default function StoreModal(props) {
 				<Modal.Header closeButton>
 					<Modal.Title>{props.data.name}</Modal.Title>
 				</Modal.Header>
-				<Modal.Body className={styles.foodStore}>
+				<Modal.Body className={styles.modal_food_store}>
 					<div>
 						<Image src={props.data.image} width={800} height={1000}></Image>
 					</div>
-					<div className={styles.description}>
-						<p className={styles.descriptionTitle}>{props.data.name}</p>
-						<p className={styles.descriptionText}>{newStr}</p>
+					<div className={styles.modal_body}>
+						<p className={styles.modal_body__title}>{props.data.name}</p>
+						<p className={styles.modal_body__text}>{newStr}</p>
 					</div>
 				</Modal.Body>
 				{props.haveurl ? (
-					<div className={styles.foodStoreInfo}>
+					<div className={styles.modal_footer}>
 						<a
 							target="_blank"
-							className={styles.foodStoreInfo__Url}
+							className={styles.modal_footer__url}
 							href={props.data.url}>
 							매장 사이트 바로 가기
 						</a>
