@@ -36,7 +36,6 @@ export default function StoreModal(props) {
 						<p className={styles.descriptionText}>{newStr}</p>
 					</div>
 				</Modal.Body>
-				// 해당 store가 url을 가지고 있다면 url 표시
 				{props.haveUrl ? (
 					<div className={styles.foodStoreInfo}>
 						<a className={styles.foodStoreInfo__Url} href={props.data.url}>

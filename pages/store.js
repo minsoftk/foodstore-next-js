@@ -25,7 +25,7 @@ export async function getStaticProps() {
 }
 
 /** getStaticProps를 통해서 Store 컴포넌트에 props로 데이터 전달 **/
-export default function Store(props) {
+const Store = (props) => {
 	let [modal, setModal] = useState(false); // modal창 on,off
 	let [foodId, setFoodId] = useState(1); // 음식점 List의 id값을 입력받음.
 	let [haveUrl, setHaveUrl] = useState(false); // Modal에 표시할 URL이 있는지 없는지 상태 저장
@@ -40,6 +40,7 @@ export default function Store(props) {
 		<>
 			<Head>
 				<title>Food Store Lists</title>
+				<meta name="viewport" content="initial-scale=1, width=device-width" />
 				<meta name="Keywords" content="Awesome food store List" />
 				<meta name="Description" content="맛집 리스트 store 페이지" />
 				<meta httpEquiv="Title" content="맛집 리스트 store 페이지" />
@@ -86,4 +87,5 @@ export default function Store(props) {
 			</div>
 		</>
 	);
-}
+};
+export default Store;

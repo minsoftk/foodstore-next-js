@@ -10,11 +10,12 @@ import styles from './about.module.css';
 
 const fetchData = () => {};
 
-export default function About() {
+const About = () => {
 	return (
 		<>
 			<Head>
 				<title>About page</title>
+				<meta name="viewport" content="initial-scale=1, width=device-width" />
 				<meta name="Keywords" content="AWESOME FOOD STORE1" />
 				<meta name="Description" content="맛집 리스트 about 페이지" />
 				<meta httpEquiv="Title" content="맛집 리스트 about 페이지" />
@@ -37,4 +38,5 @@ export default function About() {
 			</div>
 		</>
 	);
-}
+};
+export default About;

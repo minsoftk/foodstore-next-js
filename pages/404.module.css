@@ -1,0 +1,16 @@
+.error {
+	display: flex;
+	height: 70vh;
+	font-size: 2rem;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+	.error {
+		font-size: 1.3rem;
+		width: 100%;
+		flex-direction: column;
+	}
+}

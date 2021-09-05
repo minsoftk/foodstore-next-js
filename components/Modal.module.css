@@ -29,15 +29,14 @@
 .foodStoreInfo__Url {
 	color: black;
 	text-decoration: none;
+	padding: 0.3rem;
 }
-
+.foodStoreInfo__Url:hover {
+	opacity: 0.5;
+}
 @media (max-width: 1000px) {
 	.foodStore {
 		display: flex;
 		flex-direction: column;
 	}
-}
-
-.foodStoreInfo__Url:hover {
-	opacity: 0.5;
 }

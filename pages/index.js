@@ -12,11 +12,12 @@ import styles from './index.module.css';
 /** image **/
 import mainpicture from '../public/img/italiancuisine.jpg';
 
-export default function Home() {
+const Home = () => {
 	return (
 		<div className={styles.container}>
 			<Head>
 				<title>AWESOME FOOD STORE</title>
+				<meta name="viewport" content="initial-scale=1, width=device-width" />
 				<meta name="Keywords" content="AWESOME FOOD STORE1" />
 				<meta name="Description" content="맛집 리스트 메인페이지" />
 				<meta httpEquiv="Title" content="맛집 리스트 메인페이지" />
@@ -50,4 +51,5 @@ export default function Home() {
 			</main>
 		</div>
 	);
-}
+};
+export default Home;

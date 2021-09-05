@@ -38,3 +38,8 @@
 	border-color: #0070f3;
 	cursor: pointer;
 }
+@media (max-width: 600px) {
+	.title {
+		margin-top: 6rem;
+	}
+}

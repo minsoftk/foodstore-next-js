@@ -5,9 +5,7 @@ class MyDocument extends Document {
 		return (
 			<Html lang="ko">
 				<Head>
-					<meta name="viewport" content="initial-scale=1, width=device-width" />
 					<meta httpEquiv="Author" content="minsoftk" />
-
 					<link
 						href="https://fonts.googleapis.com/css2?family=Capriola&display=optional"
 						rel="stylesheet"

@@ -5,18 +5,22 @@ import styles from './Navigator.module.css';
 export default function Navigator() {
 	return (
 		<>
-			<header className={styles.header}>
-				<Navbar bg="light" variant="light" fixed="top">
-					<Container>
+			<header>
+				<Navbar
+					className={styles.navbar}
+					bg="light"
+					variant="light"
+					fixed="top">
+					<Container className={styles.container}>
 						<Link className={styles.link} href="/" passHref scroll={false}>
-							<a className={styles.main}>AWESOME FOOD STORE</a>
+							<a className={styles.mainurl}>AWESOME FOOD STORE</a>
 						</Link>
 						<Nav className="me-auto">
-							<Link href="/about" passHref scroll={false}>
-								<a className={styles.a}>ABOUT</a>
+							<Link href="/about" scroll={false}>
+								<a className={styles.url}>ABOUT</a>
 							</Link>
-							<Link href="/store" passHref scroll={false}>
-								<a className={styles.a}>STORE</a>
+							<Link href="/store" scroll={false}>
+								<a className={styles.url}>STORE</a>
 							</Link>
 						</Nav>
 					</Container>

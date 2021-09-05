@@ -1,20 +1,31 @@
-.main {
-	font-size: 1.3rem;
-	color: black;
+.navbar {
+	position: relative;
 }
-.main:hover {
-	opacity: 0.5;
+.container {
+	margin: 0;
 }
 
-.a {
-	text-decoration: none;
+.link {
+	margin-right: 0.5rem;
+}
+.link:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+.mainurl {
+	font-size: 1.3rem;
+	margin-right: 2rem;
 	color: #3d3a3a;
 }
-.a:hover {
+.mainurl:hover {
 	opacity: 0.5;
 }
 
-.link:hover {
-	opacity: 0.6;
+.url {
+	text-decoration: none;
+	color: #3d3a3a;
 	cursor: pointer;
+}
+.url:hover {
+	opacity: 0.5;
 }
