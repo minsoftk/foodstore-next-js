@@ -26,7 +26,6 @@
 
 .store_foodbox {
 	margin: 1rem;
-	padding: 0;
 	width: 150px;
 	height: 150px;
 	text-decoration: none;
@@ -40,7 +39,6 @@
 .store_foodbox:active {
 	color: cornflowerblue;
 	border-color: cornflowerblue;
-	cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -53,9 +51,9 @@
 	}
 	.store_grid {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		flex-wrap: wrap;
 		box-sizing: border-box;
 	}
 
