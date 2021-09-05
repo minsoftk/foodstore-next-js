@@ -35,6 +35,10 @@ export default function Footer() {
 					color: inherit;
 					text-decoration: none;
 				}
+				a:hover {
+					opacity: 0.5;
+					color: cornflowerblue;
+				}
 			`}</style>
 		</>
 	);

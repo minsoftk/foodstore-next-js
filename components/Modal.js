@@ -7,7 +7,6 @@ import { Modal } from 'react-bootstrap';
 import styles from './Modal.module.css';
 
 export default function StoreModal(props) {
-	let [haveUrl, setHaveUrl] = useState(false);
 	let str = props.data.description.split('\n');
 	let newStr = str.map((line) => {
 		return (
@@ -17,14 +16,7 @@ export default function StoreModal(props) {
 			</span>
 		);
 	});
-	const urlCheck = (url) => {
-		if (url) {
-			setHaveUrl(true);
-		} else setHaveUrl(false);
-	};
-	useEffect(() => {
-		urlCheck(props.data.url);
-	}, []);
+
 	return (
 		<>
 			<Modal
@@ -44,15 +36,14 @@ export default function StoreModal(props) {
 						<p className={styles.descriptionText}>{newStr}</p>
 					</div>
 				</Modal.Body>
-				{haveUrl ? (
+				// 해당 store가 url을 가지고 있다면 url 표시
+				{props.haveUrl ? (
 					<div className={styles.foodStoreInfo}>
 						<a className={styles.foodStoreInfo__Url} href={props.data.url}>
 							매장 사이트 바로 가기
 						</a>
 					</div>
-				) : (
-					<div>null</div>
-				)}
+				) : null}
 			</Modal>
 		</>
 	);

@@ -7,31 +7,20 @@ import Footer from '../components/Footer';
 import Navigator from '../components/Navigator';
 
 /** css **/
-import styles from './css/index.module.css';
+import styles from './index.module.css';
 
 /** image **/
-import mainpicture from '../img/italiancuisine.jpg';
+import mainpicture from '../public/img/italiancuisine.jpg';
 
 export default function Home() {
 	return (
 		<div className={styles.container}>
 			<Head>
 				<title>AWESOME FOOD STORE</title>
-				<meta name="viewport" content="initial-scale=1, width=device-width" />
-				<meta name="Keywords" content="음식 맛집 리스트" />
-				<meta name="Description" content="맛집 리스트" />
-				<meta httpEquiv="Title" content="맛집 프로젝트" />
-				<meta httpEquiv="Author" content="minsoftk" />
-
-				<link rel="icon" href="/favicon.ico" />
-				<link
-					rel="stylesheet"
-					href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-					integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-					crossorigin="anonymous"
-				/>
+				<meta name="Keywords" content="AWESOME FOOD STORE1" />
+				<meta name="Description" content="맛집 리스트 메인페이지" />
+				<meta httpEquiv="Title" content="맛집 리스트 메인페이지" />
 			</Head>
-			<Navigator />
 
 			<main className={styles.main}>
 				<Image
@@ -59,7 +48,6 @@ export default function Home() {
 					경험해보세요.
 				</p>
 			</main>
-			<Footer />
 		</div>
 	);
 }
