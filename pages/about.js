@@ -26,7 +26,9 @@ const About = () => {
 						<p className={styles.description}>
 							React 프레임워크 Next.js를 사용해서 Store 페이지 개발하기.
 						</p>
-						<div>1. Link를 사용한 pre-rendering</div>
+						<div>1. 내장된 Link를 사용한 pre-rendering 기능</div>
+						<div>2. 페이지들마다 meta 태그를 입력해 SEO 최적화</div>
+						<div>3. </div>
 					</div>
 				</main>
 			</div>

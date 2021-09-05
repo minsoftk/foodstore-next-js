@@ -38,7 +38,10 @@ export default function StoreModal(props) {
 				</Modal.Body>
 				{props.haveUrl ? (
 					<div className={styles.foodStoreInfo}>
-						<a className={styles.foodStoreInfo__Url} href={props.data.url}>
+						<a
+							target="_blank"
+							className={styles.foodStoreInfo__Url}
+							href={props.data.url}>
 							매장 사이트 바로 가기
 						</a>
 					</div>
