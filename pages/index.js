@@ -14,19 +14,22 @@ const Home = () => {
 			<Head>
 				<title>AWESOME FOOD STORE</title>
 				<meta name="viewport" content="initial-scale=1, width=device-width" />
-				<meta name="Keywords" content="AWESOME FOOD STORE1" />
-				<meta name="Description" content="맛집 리스트 메인페이지" />
+				<meta name="Keywords" content="next.js, next.js프로젝트" />
+				<meta
+					name="Description"
+					content="next.js로 food store shop 만들기 프로젝트"
+				/>
 				<meta httpEquiv="Title" content="맛집 리스트 메인페이지" />
 			</Head>
 
-			<div className={styles.container}>
-				<main className={styles.main}>
+			<div className={styles.main_container}>
+				<main>
 					<Image
 						className={styles.main_image}
 						src={mainpicture}
 						alt="main-food-picture"
 					/>
-					<h1 className={styles.main_title}>Awesome food!</h1>
+					<h1 className={styles.main_title}>Awesome Food Store</h1>
 
 					<p className={styles.sub_title}>
 						Let's find a good restaurant. go to &rarr;{' '}

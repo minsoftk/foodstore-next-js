@@ -55,9 +55,12 @@ const Store = (props) => {
 			<Head>
 				<title>Food Store Lists</title>
 				<meta name="viewport" content="initial-scale=1, width=device-width" />
-				<meta name="Keywords" content="Awesome food store List" />
-				<meta name="Description" content="맛집 리스트 store 페이지" />
-				<meta httpEquiv="Title" content="맛집 리스트 store 페이지" />
+				<meta
+					name="Keywords"
+					content="next.js, next.js프로젝트, 맛집리스트, 맛집, foodstores"
+				/>
+				<meta name="Description" content="맛집리스트, food-store-list" />
+				<meta httpEquiv="Title" content="맛집 리스트 페이지" />
 			</Head>
 
 			<div>

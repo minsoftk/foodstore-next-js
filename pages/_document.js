@@ -5,6 +5,14 @@ class MyDocument extends Document {
 		return (
 			<Html lang="ko">
 				<Head>
+					<meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+					<meta name="Date" content="2021-09-06T07:45:37+09:00" />
+					<meta
+						httpEquiv="Content-Script-Type"
+						content="text/javascript"
+					/>{' '}
+					<meta httpEquiv="Content-Style-Type" content="text/css" />
+					<meta httpEquiv="Subject" content="next.js를 활용한 프로젝트" />
 					<meta httpEquiv="Author" content="minsoftk" />
 					<link
 						href="https://fonts.googleapis.com/css2?family=Capriola&display=optional"
