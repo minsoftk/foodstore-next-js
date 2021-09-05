@@ -50,7 +50,9 @@ export default function StoreModal(props) {
 							매장 사이트 바로 가기
 						</a>
 					</div>
-				) : null}
+				) : (
+					<div>null</div>
+				)}
 			</Modal>
 		</>
 	);

@@ -36,7 +36,6 @@ export default function Store(props) {
 				<meta name="Description" content="맛집 리스트" />
 				<meta httpEquiv="Title" content="맛집 리스트 food store list" />
 				<meta httpEquiv="Author" content="minsoftk" />
-
 				<link rel="icon" href="/favicon.ico" />
 				<link
 					rel="stylesheet"
