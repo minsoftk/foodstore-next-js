@@ -1,7 +1,7 @@
 import Head from 'next/head';
-
 import Image from 'next/image';
 import React, { useState } from 'react';
+
 /* components */
 import StoreModal from '../components/Modal';
 
@@ -9,7 +9,6 @@ import StoreModal from '../components/Modal';
 import styles from './store.module.css';
 
 /** rest api 데이터 호출 **/
-/** 실제 제출용 **/
 export async function getStaticProps() {
 	const res = await fetch(`http://localhost:9000/stores`);
 	const data = await res.json();
@@ -45,7 +44,7 @@ const Store = (props) => {
 	let [foodId, setFoodId] = useState(1); // 음식점 List의 id값을 입력받음.
 	let [haveurl, setHaveUrl] = useState(false); // Modal에 표시할 URL이 있는지 없는지 상태 저장
 
-	// Modal 창 닫힐 때의 로직
+	// Modal 창 닫힐 때
 	const onHide = () => {
 		setModal(false);
 		setHaveUrl(false);
@@ -62,45 +61,44 @@ const Store = (props) => {
 			</Head>
 
 			<div>
-				<p className={styles.title}>EAT</p>
+				<p className={styles.store_main__title}>EAT</p>
 				<hr></hr>
 			</div>
-			<div className={styles.container}>
-				<main className={styles.main}>
-					<p className={styles.b_title}>EAT</p>
-					<div className={styles.grid}>
-						{props.data.map((stores, i) => {
-							return (
-								<div key={stores.id} className={styles.linkBox}>
-									<a
-										onClick={() => {
-											setModal(true);
-											setFoodId(i); // 어떤 idx의 store 인지 상태 저장
-											//만약 가게의 url을 가지고 있다면 state에 저장
-											if (stores.url) {
-												setHaveUrl(true);
-											} else setHaveUrl(false);
-										}}>
-										<Image
-											className={styles.image}
-											src={stores.thumb}
-											alt="food-store"
-											width={150}
-											height={150}
-										/>
-									</a>
-									<span key={stores.id}>{stores.name}</span>
-								</div>
-							);
-						})}
-						<StoreModal
-							data={props.data[foodId]} // 해당 가게의 데이터 전달
-							haveurl={haveurl} //해당 가게의 url 유무
-							show={modal}
-							onHide={onHide}></StoreModal>
-					</div>
-				</main>
-			</div>
+
+			<main>
+				<p className={styles.store_sub__title}>EAT</p>
+				<div className={styles.store_grid}>
+					{props.data.map((stores, i) => {
+						return (
+							<div key={stores.id} className={styles.store_foodbox}>
+								<a
+									onClick={() => {
+										setModal(true);
+										setFoodId(i); // 어떤 idx의 store 인지 상태 저장
+										//만약 가게의 url을 가지고 있다면 state에 저장
+										if (stores.url) {
+											setHaveUrl(true);
+										} else setHaveUrl(false);
+									}}>
+									<Image
+										className={styles.store_food__image}
+										src={stores.thumb}
+										alt="food-store"
+										width={150}
+										height={150}
+									/>
+								</a>
+								<span>{stores.name}</span>
+							</div>
+						);
+					})}
+					<StoreModal
+						data={props.data[foodId]} // 해당 가게의 데이터 전달
+						haveurl={haveurl} //해당 가게의 url 유무
+						show={modal}
+						onHide={onHide}></StoreModal>
+				</div>
+			</main>
 		</>
 	);
 };
