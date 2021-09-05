@@ -21,6 +21,7 @@ export default function Footer() {
 					justify-content: center;
 					align-items: center;
 					position: relative;
+					font-weight: 600;
 				}
 
 				footer img {

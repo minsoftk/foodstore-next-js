@@ -4,28 +4,47 @@
 .container {
 	margin: 0;
 }
+.mainurl {
+	font-size: 1.5rem;
+	margin: 10px;
+	color: #3d3a3a;
+}
+.mainurl:hover {
+	color: cornflowerblue;
+	opacity: 0.8;
+}
 
 .link {
 	margin-right: 0.5rem;
 }
-.link:hover {
-	opacity: 0.8;
-	cursor: pointer;
-}
-.mainurl {
-	font-size: 1.3rem;
-	margin-right: 2rem;
-	color: #3d3a3a;
-}
-.mainurl:hover {
-	opacity: 0.5;
-}
 
-.url {
+.link__url {
 	text-decoration: none;
 	color: #3d3a3a;
-	cursor: pointer;
 }
 .url:hover {
-	opacity: 0.5;
+	opacity: 0.8;
+	color: cornflowerblue;
+}
+.dropdown {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		display: none;
+	}
+	.navbar {
+		position: relative;
+	}
+
+	.dropdown {
+		display: inherit;
+		position: relative;
+	}
+	.dropdown__url {
+		text-align: center;
+		text-decoration: none;
+		color: #3d3a3a;
+	}
 }

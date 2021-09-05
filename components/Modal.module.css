@@ -32,7 +32,7 @@
 	padding: 0.3rem;
 }
 .foodStoreInfo__Url:hover {
-	opacity: 0.5;
+	opacity: 0.8;
 }
 @media (max-width: 1000px) {
 	.foodStore {

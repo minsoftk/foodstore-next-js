@@ -17,6 +17,9 @@ class MyDocument extends Document {
 						integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
 						crossOrigin="anonymous"
 					/>
+					<script
+						src="https://kit.fontawesome.com/6a5db0a2e0.js"
+						crossorigin="anonymous"></script>
 				</Head>
 				<body>
 					<Main />

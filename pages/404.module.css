@@ -7,7 +7,7 @@
 	text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	.error {
 		font-size: 1.3rem;
 		width: 100%;

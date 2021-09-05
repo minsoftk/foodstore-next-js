@@ -8,9 +8,9 @@ import styles from './Modal.module.css';
 
 export default function StoreModal(props) {
 	let str = props.data.description.split('\n');
-	let newStr = str.map((line) => {
+	let newStr = str.map((line, i) => {
 		return (
-			<span>
+			<span key={i}>
 				{line}
 				<br />
 			</span>
@@ -36,7 +36,7 @@ export default function StoreModal(props) {
 						<p className={styles.descriptionText}>{newStr}</p>
 					</div>
 				</Modal.Body>
-				{props.haveUrl ? (
+				{props.haveurl ? (
 					<div className={styles.foodStoreInfo}>
 						<a
 							target="_blank"

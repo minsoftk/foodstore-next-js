@@ -43,7 +43,7 @@
 	margin-top: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	.title {
 		margin-top: 1rem;
 	}
