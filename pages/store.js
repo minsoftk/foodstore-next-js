@@ -22,7 +22,6 @@ import styles from './store.module.css';
 // 	};
 // }
 
-/** 배포용 **/
 export async function getStaticProps() {
 	const res = await fetch(`https://minsoftk.github.io/jsontest/db.json`);
 	let data = await res.json();

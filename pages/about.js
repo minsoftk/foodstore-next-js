@@ -33,7 +33,7 @@ const About = () => {
 							Next.js의 특징
 							<br />
 							1. 모든 페이지를 Pre-rendering을 한다는 점. getStaticProps를
-							활용해, 빌드하면서 fetch로 Data를 가져온다.
+							활용해, 빌드하면서 fetch로 Data를 미리 가져올 수도 있다.
 							<br />
 							2. 각각의 페이지마다 head 태그를 커스터마이징해 SEO 최적화
 							<br />
