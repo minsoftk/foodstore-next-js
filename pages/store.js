@@ -9,24 +9,10 @@ import StoreModal from '../components/Modal';
 import styles from './store.module.css';
 
 /** rest api 데이터 호출 **/
-// export async function getStaticProps() {
-// 	const res = await fetch(`http://localhost:9000/stores`);
-// 	const data = await res.json();
-// 	if (!data) {
-// 		return {
-// 			notFound: true,
-// 		};
-// 	}
-// 	return {
-// 		props: { data }, // will be passed to the page component as props
-// 	};
-// }
+export const getStaticProps = async () => {
+	const res = await fetch(`http://localhost:9000/stores`);
+	const data = await res.json();
 
-export async function getStaticProps() {
-	const res = await fetch(`https://minsoftk.github.io/jsontest/db.json`);
-	let data = await res.json();
-	data = data.stores;
-	console.log(data);
 	if (!data) {
 		return {
 			notFound: true,
@@ -35,7 +21,7 @@ export async function getStaticProps() {
 	return {
 		props: { data }, // will be passed to the page component as props
 	};
-}
+};
 
 /** getStaticProps를 통해서 Store 컴포넌트에 props로 데이터 전달 **/
 const Store = (props) => {
