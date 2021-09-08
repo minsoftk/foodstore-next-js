@@ -10,7 +10,9 @@ import styles from './store.module.css';
 
 /** rest api 데이터 호출 **/
 export const getStaticProps = async () => {
-	const res = await fetch(`http://localhost:9000/stores`);
+	const res = await fetch(
+		`http://localhost:9000/https://minsoftk.github.io/jsontest/db.json`
+	);
 	const data = await res.json();
 
 	if (!data) {

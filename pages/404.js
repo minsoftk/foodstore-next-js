@@ -24,6 +24,7 @@ const Custom404 = () => {
 		const clearTimer = () => {
 			clearTimeout(Timer);
 		};
+
 		return clearTimer();
 	}, []);
 
